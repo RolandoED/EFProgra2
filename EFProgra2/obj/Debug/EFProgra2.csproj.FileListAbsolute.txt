@@ -1,10 +1,11 @@
+c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.csprojResolveAssemblyReference.cache
+c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.ManEstudiante.resources
+c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.ManMateria.resources
+c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.csproj.GenerateResource.Cache
 c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\bin\Debug\EFProgra2.exe.config
 c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\bin\Debug\EFProgra2.exe
 c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\bin\Debug\EFProgra2.pdb
-c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.csprojResolveAssemblyReference.cache
 c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.exe
 c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.pdb
-c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.MAIN.resources
-c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.csproj.GenerateResource.Cache
-c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.Vistas.ManEstudiante.resources
-c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.Vistas.ManMateria.resources
+c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.MENU.resources
+c:\users\rolando\documents\visual studio 2013\Projects\EFProgra2\EFProgra2\obj\Debug\EFProgra2.ManProfesor.resources

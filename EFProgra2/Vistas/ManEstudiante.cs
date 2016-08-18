@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EFProgra2.Vistas
+namespace EFProgra2
 {
     public partial class ManEstudiante : Form
     {
         public ManEstudiante()
         {
             InitializeComponent();
+        }
+
+        private void ManEstudiante_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

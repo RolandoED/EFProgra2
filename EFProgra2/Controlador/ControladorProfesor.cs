@@ -54,7 +54,7 @@ namespace EFProgra2
                 + "NOMBRE ='" + entidad.Nombre + "',"
                 + "APELLIDO = '" + entidad.Apellido + "' "
                 + " WHERE "
-                + "CEDULA = " + entidad.Cedula;
+                + " ID_PROFESOR = " + entidad.Cedula;
             mod.ejecutarSQL(sql);
         }
 
@@ -62,7 +62,7 @@ namespace EFProgra2
         {
             sql = "DELETE PROFESOR "
                 + "WHERE "
-                + "CEDULA = " + id;
+                + "ID_PROFESOR = " + id;
             mod.ejecutarSQL(sql);
         }
     }

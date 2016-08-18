@@ -1,4 +1,4 @@
-﻿namespace EFProgra2.Vistas
+﻿namespace EFProgra2
 {
     partial class ManEstudiante
     {
@@ -175,6 +175,7 @@
             this.Controls.Add(this.txtCedula);
             this.Name = "ManEstudiante";
             this.Text = "ManEstudiante";
+            this.Load += new System.EventHandler(this.ManEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
