@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
 
-namespace EFProgra2.Modelo
+namespace EFProgra2
 {
     class Modelo
     {

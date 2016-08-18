@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\ControladorProfesor.cs" />
+    <Compile Include="Controlador\EntidadProfesor.cs" />
     <Compile Include="Vistas\ManEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,9 +81,7 @@
       <DependentUpon>ManProfesor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controlador\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
