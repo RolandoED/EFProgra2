@@ -21,19 +21,6 @@ namespace EFProgra2
             InitializeComponent();
         }
 
-        private void mANTPROFESORToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-             //frmcu = new frmControlUsuarios();
-            //frmcu.MdiParent = this;
-           // frmcu.Show();
-        }
-
-        private void mANTMATERIAToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ManMateria s = new ManMateria();
-            s.MdiParent = this;
-            s.Show();
-        }
 
         private void MENU_Load(object sender, EventArgs e)
         {

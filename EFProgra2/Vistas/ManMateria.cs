@@ -15,6 +15,9 @@ namespace EFProgra2
 {
     public partial class ManMateria : Form
     {
+        ControladorMateria controladormateria = new ControladorMateria();
+        EntidadMateria entidadmateria = new EntidadMateria();
+
         public ManMateria()
         {
             InitializeComponent();
@@ -49,13 +52,86 @@ namespace EFProgra2
             cmbProfesor.ValueMember = "Key";
 
             cmbProfesor.SelectedIndex = 0;
+
+            cargarGrid();
         }
 
-        private void cmbProfesor_SelectedIndexChanged(object sender, EventArgs e)
+        private void cargarGrid()
         {
-
+            dataGridView1.DataSource = controladormateria.leer();
         }
 
+        private void limpiarCampos()
+        {
+            txtIDMateria.Text = "";
+            txtNombre.Text = "";
+            cmbProfesor.SelectedIndex = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //limpiar
+            limpiarCampos();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            //insert into table
+            cargarEntidad();
+            controladormateria.insertar(entidadmateria);
+            cargarGrid();
+            limpiarCampos();
+        }
+
+       private void cargarEntidad()
+        {
+            //fill entity with data
+            entidadmateria.Id = Convert.ToInt32(txtIDMateria.Text);
+            entidadmateria.Nombre = txtNombre.Text;
+            entidadmateria.Id_Profesor = Int32.Parse(cmbProfesor.SelectedValue.ToString());
+            
+        }
+
+       private void btnEliminar_Click(object sender, EventArgs e)
+       {
+           //Eliminar
+           controladormateria.eliminar(Convert.ToInt32(txtIDMateria.Text));
+           cargarGrid();
+           limpiarCampos();
+       }
+
+       private void btnModificar_Click(object sender, EventArgs e)
+       {
+           //update table
+           cargarEntidad();
+           controladormateria.modificar(entidadmateria);
+           cargarGrid();
+           limpiarCampos();
+       }
+
+       private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+       {
+           try
+           {
+               if (dataGridView1.SelectedRows.Count > 0)
+               {
+                   txtIDMateria.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                   txtNombre.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                   //SETEAR EL COMBO
+                   //txtApellido.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+               }
+           }
+           catch (Exception)
+           {
+               Console.WriteLine(" ");
+           }
+       }
+
+       private void btnRefrescar_Click(object sender, EventArgs e)
+       {
+           //refresh
+           cargarGrid();
+       }
 
     }
 }
