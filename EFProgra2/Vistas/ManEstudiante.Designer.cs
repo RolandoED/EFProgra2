@@ -41,13 +41,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.cmbMateria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(62, 24);
+            this.label7.Location = new System.Drawing.Point(80, 13);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 57;
@@ -55,7 +61,7 @@
             // 
             // btnRefrescar
             // 
-            this.btnRefrescar.Location = new System.Drawing.Point(332, 137);
+            this.btnRefrescar.Location = new System.Drawing.Point(467, 126);
             this.btnRefrescar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(75, 25);
@@ -65,7 +71,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(332, 108);
+            this.btnEliminar.Location = new System.Drawing.Point(467, 97);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 55;
@@ -74,7 +80,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(332, 82);
+            this.btnModificar.Location = new System.Drawing.Point(467, 71);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 54;
@@ -84,14 +90,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 191);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 225);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(563, 151);
             this.dataGridView1.TabIndex = 53;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(332, 52);
+            this.btnAgregar.Location = new System.Drawing.Point(467, 41);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 52;
@@ -100,7 +106,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(332, 24);
+            this.btnLimpiar.Location = new System.Drawing.Point(467, 13);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpiar.TabIndex = 51;
@@ -109,22 +115,22 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(199, 110);
+            this.txtApellido.Location = new System.Drawing.Point(217, 81);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.Size = new System.Drawing.Size(187, 20);
             this.txtApellido.TabIndex = 50;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(199, 77);
+            this.txtNombre.Location = new System.Drawing.Point(217, 48);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(187, 20);
             this.txtNombre.TabIndex = 49;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(109, 110);
+            this.label4.Location = new System.Drawing.Point(127, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 48;
@@ -133,7 +139,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(109, 80);
+            this.label3.Location = new System.Drawing.Point(127, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 47;
@@ -142,7 +148,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(109, 52);
+            this.label2.Location = new System.Drawing.Point(127, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 46;
@@ -150,16 +156,71 @@
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(199, 49);
+            this.txtCedula.Location = new System.Drawing.Point(217, 20);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(100, 20);
+            this.txtCedula.Size = new System.Drawing.Size(127, 20);
             this.txtCedula.TabIndex = 45;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(217, 113);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(218, 20);
+            this.textBox1.TabIndex = 59;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(127, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "Direccion";
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Location = new System.Drawing.Point(217, 139);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(55, 20);
+            this.txtEdad.TabIndex = 61;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(127, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 60;
+            this.label5.Text = "Edad";
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(127, 165);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(42, 13);
+            this.lbl1.TabIndex = 63;
+            this.lbl1.Text = "Materia";
+            // 
+            // cmbMateria
+            // 
+            this.cmbMateria.FormattingEnabled = true;
+            this.cmbMateria.Location = new System.Drawing.Point(217, 165);
+            this.cmbMateria.Name = "cmbMateria";
+            this.cmbMateria.Size = new System.Drawing.Size(121, 21);
+            this.cmbMateria.TabIndex = 62;
             // 
             // ManEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 359);
+            this.ClientSize = new System.Drawing.Size(685, 415);
+            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.cmbMateria);
+            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.btnEliminar);
@@ -197,5 +258,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.ComboBox cmbMateria;
     }
 }

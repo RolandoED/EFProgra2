@@ -59,7 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controlador\ControladorMateria.cs" />
+    <Compile Include="Controlador\ControladorEstudiante.cs" />
     <Compile Include="Controlador\ControladorProfesor.cs" />
+    <Compile Include="Controlador\EntidadEstudiante.cs" />
     <Compile Include="Controlador\EntidadMateria.cs" />
     <Compile Include="Controlador\EntidadProfesor.cs" />
     <Compile Include="Vistas\ManProfesor.cs">
