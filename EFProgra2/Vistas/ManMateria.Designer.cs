@@ -145,6 +145,7 @@
             this.cmbProfesor.Name = "cmbProfesor";
             this.cmbProfesor.Size = new System.Drawing.Size(121, 21);
             this.cmbProfesor.TabIndex = 58;
+            this.cmbProfesor.SelectedIndexChanged += new System.EventHandler(this.cmbProfesor_SelectedIndexChanged);
             // 
             // ManMateria
             // 

@@ -51,6 +51,11 @@ namespace EFProgra2
             cmbProfesor.SelectedIndex = 0;
         }
 
+        private void cmbProfesor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }
