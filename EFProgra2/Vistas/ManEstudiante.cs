@@ -15,7 +15,6 @@ namespace EFProgra2
 {
     public partial class ManEstudiante : Form
     {
-
         ControladorEstudiante controladorestudiante = new ControladorEstudiante();
         EntidadEstudiante entidadestudiante = new EntidadEstudiante();
 
@@ -28,9 +27,7 @@ namespace EFProgra2
         {
             cargarGrid();
             cargarCombo();
-        }
-
-        
+        }        
 
         private void cargarGrid()
         {
@@ -46,7 +43,7 @@ namespace EFProgra2
 
             DataTable dt1 = new DataTable();
             dt1 = new DataTable();
-            string sqlquery = " select id_materia, nombre from materia;";
+            string sqlquery = " select id_materia, nombre from materia ";
 
             sqlconn = new SqlConnection(conexion);
             SqlDataAdapter sqlda = new SqlDataAdapter(sqlquery, sqlconn);

@@ -47,7 +47,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(91, 9);
+            this.label7.Location = new System.Drawing.Point(67, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 57;
@@ -55,7 +55,7 @@
             // 
             // btnRefrescar
             // 
-            this.btnRefrescar.Location = new System.Drawing.Point(314, 125);
+            this.btnRefrescar.Location = new System.Drawing.Point(290, 139);
             this.btnRefrescar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(75, 25);
@@ -66,7 +66,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(314, 96);
+            this.btnEliminar.Location = new System.Drawing.Point(290, 110);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 55;
@@ -76,7 +76,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(314, 70);
+            this.btnModificar.Location = new System.Drawing.Point(290, 84);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 54;
@@ -89,13 +89,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(24, 179);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(563, 151);
+            this.dataGridView1.Size = new System.Drawing.Size(444, 151);
             this.dataGridView1.TabIndex = 53;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(314, 40);
+            this.btnAgregar.Location = new System.Drawing.Point(290, 54);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 52;
@@ -105,7 +105,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(314, 12);
+            this.btnLimpiar.Location = new System.Drawing.Point(290, 26);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpiar.TabIndex = 51;
@@ -115,7 +115,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(160, 65);
+            this.txtNombre.Location = new System.Drawing.Point(136, 79);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 49;
@@ -123,7 +123,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(91, 68);
+            this.label3.Location = new System.Drawing.Point(67, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 47;
@@ -132,7 +132,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(91, 40);
+            this.label2.Location = new System.Drawing.Point(67, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 46;
@@ -140,7 +140,7 @@
             // 
             // txtIDMateria
             // 
-            this.txtIDMateria.Location = new System.Drawing.Point(160, 37);
+            this.txtIDMateria.Location = new System.Drawing.Point(136, 51);
             this.txtIDMateria.Name = "txtIDMateria";
             this.txtIDMateria.Size = new System.Drawing.Size(100, 20);
             this.txtIDMateria.TabIndex = 45;
@@ -148,7 +148,7 @@
             // cmbProfesor
             // 
             this.cmbProfesor.FormattingEnabled = true;
-            this.cmbProfesor.Location = new System.Drawing.Point(160, 96);
+            this.cmbProfesor.Location = new System.Drawing.Point(136, 110);
             this.cmbProfesor.Name = "cmbProfesor";
             this.cmbProfesor.Size = new System.Drawing.Size(121, 21);
             this.cmbProfesor.TabIndex = 58;
@@ -156,7 +156,7 @@
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(91, 96);
+            this.lbl1.Location = new System.Drawing.Point(67, 110);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(46, 13);
             this.lbl1.TabIndex = 59;
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 358);
+            this.ClientSize = new System.Drawing.Size(495, 358);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.cmbProfesor);
             this.Controls.Add(this.label7);
