@@ -13,11 +13,14 @@ namespace EFProgra2
         public DataTable leer()
         {
             sql = "SELECT "
-                + "ID_PROFESOR AS Cedula,"
-                + "NOMBRE AS Nombre,"
-                + "APELLIDO AS Apellido "
+                + "ID_ESTUDIANTE AS Cedula, "
+                + "NOMBRE AS Nombre, "
+                + "APELLIDO AS Apellido, "
+                + "DIRECCION AS Direccion, "
+                + "EDAD AS Edad, "
+                + "ID_MATERIA AS ID_Materia "
                 + " FROM "
-                + "PROFESOR";
+                + "ESTUDIANTE ";
             return mod.llenarDT(sql);
         }
 
@@ -34,35 +37,44 @@ namespace EFProgra2
             return mod.llenarDT(sql);
         }
         
-        public void insertar(EntidadProfesor entidad)
+        public void insertar(EntidadEstudiante entidad)
         {
-            sql = "INSERT INTO PROFESOR ("
-                + "ID_PROFESOR,"
+            sql = "INSERT INTO ESTUDIANTE ("
+                + "ID_ESTUDIANTE,"
                 + "NOMBRE,"
-                + "APELLIDO "
+                + "APELLIDO, "
+                + "DIRECCION,"
+                + "EDAD,"
+                + "ID_MATERIA"
                 + ") VALUES ("
-                + entidad.Cedula + ","
+                + entidad.Id_Estudiante + ","
                 + "'" + entidad.Nombre + "',"
-                + "'" + entidad.Apellido + "'"
+                + "'" + entidad.Apellido + "',"
+                + "'" + entidad.Direccion + "',"
+                + " " + entidad.Edad + " ,"
+                + " " + entidad.Id_Materia + " "
                 + ")";
             mod.ejecutarSQL(sql);
         }
 
-        public void modificar(EntidadProfesor entidad)
+        public void modificar(EntidadEstudiante entidad)
         {
-            sql = "UPDATE PROFESOR SET "
+            sql = "UPDATE ESTUDIANTE SET "
                 + "NOMBRE ='" + entidad.Nombre + "',"
-                + "APELLIDO = '" + entidad.Apellido + "' "
+                + "APELLIDO = '" + entidad.Apellido + "', "
+                + "DIRECCION ='" + entidad.Direccion + "',"
+                + "EDAD = " + entidad.Edad + " ,"
+                + "ID_MATERIA = " + entidad.Id_Materia+ " "
                 + " WHERE "
-                + " ID_PROFESOR = " + entidad.Cedula;
+                + " ID_ESTUDIANTE = " + entidad.Id_Estudiante;
             mod.ejecutarSQL(sql);
         }
 
         public void eliminar(int id)
         {
-            sql = "DELETE PROFESOR "
+            sql = "DELETE ESTUDIANTE "
                 + "WHERE "
-                + "ID_PROFESOR = " + id;
+                + "ID_ESTUDIANTE = " + id;
             mod.ejecutarSQL(sql);
         }
     }

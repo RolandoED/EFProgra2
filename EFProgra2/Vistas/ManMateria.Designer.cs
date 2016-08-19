@@ -181,7 +181,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtIDMateria);
             this.Name = "ManMateria";
-            this.Text = "ManMateria";
+            this.Text = "CRUD Materia";
             this.Load += new System.EventHandler(this.ManMateria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

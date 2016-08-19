@@ -64,6 +64,7 @@
     <Compile Include="Controlador\EntidadEstudiante.cs" />
     <Compile Include="Controlador\EntidadMateria.cs" />
     <Compile Include="Controlador\EntidadProfesor.cs" />
+    <Compile Include="Estadistica.cs" />
     <Compile Include="Vistas\ManProfesor.cs">
       <SubType>Form</SubType>
     </Compile>

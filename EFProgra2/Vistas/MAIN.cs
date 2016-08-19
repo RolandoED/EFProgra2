@@ -41,5 +41,12 @@ namespace EFProgra2
             frmmm.Show();
         }
 
+        private void manEstudianteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManEstudiante frmme = new ManEstudiante();
+            frmme.MdiParent = this;
+            frmme.Show();
+        }
+
     }
 }

@@ -101,5 +101,26 @@ namespace EFProgra2
                 Console.WriteLine(" ");
             }
         }
+
+        private void dataGridView1_SelectionChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    txtCedula.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                    txtNombre.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                    txtApellido.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                    //SETEAR EL COMBO
+                    //txtApellido.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine(" ");
+            }
+        }
+
+
     }
 }

@@ -47,9 +47,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(63, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.Size = new System.Drawing.Size(62, 17);
             this.label7.TabIndex = 83;
             this.label7.Text = "Profesor";
             // 
@@ -91,6 +92,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(563, 151);
             this.dataGridView1.TabIndex = 79;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged_1);
             // 
             // btnAgregar
             // 
@@ -124,32 +126,35 @@
             this.txtNombre.Location = new System.Drawing.Point(200, 65);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 75;
+            this.txtNombre.TabIndex = 75;            
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(110, 98);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(142, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(58, 17);
             this.label4.TabIndex = 74;
             this.label4.Text = "Apellido";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 68);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(142, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(58, 17);
             this.label3.TabIndex = 73;
             this.label3.Text = "Nombre";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 40);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(142, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(52, 17);
             this.label2.TabIndex = 72;
             this.label2.Text = "Cedula";
             // 
@@ -160,11 +165,11 @@
             this.txtCedula.Size = new System.Drawing.Size(100, 20);
             this.txtCedula.TabIndex = 71;
             // 
-            // MENU
+            // ManProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 323);
+            this.ClientSize = new System.Drawing.Size(701, 402);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.btnEliminar);
@@ -178,8 +183,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCedula);
-            this.Name = "MENU";
-            this.Text = "Form1";
+            this.Name = "ManProfesor";
+            this.Text = "CRUD Profesor";
             this.Load += new System.EventHandler(this.MENU_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

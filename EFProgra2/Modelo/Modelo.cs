@@ -27,8 +27,6 @@ namespace EFProgra2
             {
                 var message = MessageBox.Show("Conexion fallida! Error: " + e.Message.ToString());
             }
-
-
         }
 
         public void desconectarBD()

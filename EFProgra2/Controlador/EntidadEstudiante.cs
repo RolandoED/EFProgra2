@@ -2,19 +2,22 @@
 {
     class EntidadEstudiante
     {
-        private int id;
+        private int id_estudiante;
         private string nombre;
-        private int id_profesor;
+        private string apellido;
+        private string direccion;
+        private int edad;
+        private int id_materia;
 
-        public int Id
+        public int Id_Estudiante
         {
             get
             {
-                return id;
+                return id_estudiante;
             }
             set
             {
-                id = value;
+                id_estudiante = value;
             }
         }
 
@@ -30,23 +33,63 @@
             }
         }
 
-        public int Id_Profesor
+        public string Apellido
         {
             get
             {
-                return id_profesor;
+                return apellido;
             }
             set
             {
-                id_profesor = value;
+                apellido = value;
+            }
+        }
+
+        public string Direccion
+        {
+            get
+            {
+                return direccion;
+            }
+            set
+            {
+                direccion = value;
+            }
+        }
+
+        public int Edad
+        {
+            get
+            {
+                return edad;
+            }
+            set
+            {
+                edad = value;
+            }
+        }
+
+        public int Id_Materia
+        {
+            get
+            {
+                return id_materia;
+            }
+            set
+            {
+                id_materia = value;
             }
         }
         //CONTRUCTOR
         public EntidadEstudiante()
         {
-            Id = int.MinValue;
+            id_estudiante = int.MinValue;
             nombre = string.Empty;
-            id_profesor = int.MinValue;
+            apellido = string.Empty;
+            direccion = string.Empty;
+            edad = int.MinValue;
+            id_materia = int.MinValue;                    
         }
+
     }
 }

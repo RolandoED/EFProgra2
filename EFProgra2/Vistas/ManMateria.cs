@@ -84,7 +84,7 @@ namespace EFProgra2
         }
 
        private void cargarEntidad()
-        {
+       {
             //fill entity with data
             entidadmateria.Id = Convert.ToInt32(txtIDMateria.Text);
             entidadmateria.Nombre = txtNombre.Text;

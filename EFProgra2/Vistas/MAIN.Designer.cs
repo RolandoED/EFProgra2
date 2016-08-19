@@ -67,6 +67,7 @@
             this.manEstudianteToolStripMenuItem.Name = "manEstudianteToolStripMenuItem";
             this.manEstudianteToolStripMenuItem.Size = new System.Drawing.Size(129, 25);
             this.manEstudianteToolStripMenuItem.Text = "Man Estudiante";
+            this.manEstudianteToolStripMenuItem.Click += new System.EventHandler(this.manEstudianteToolStripMenuItem_Click);
             // 
             // MENU
             // 
@@ -77,7 +78,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MENU";
-            this.Text = "Form1";
+            this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.MENU_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
