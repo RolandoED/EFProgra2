@@ -89,6 +89,7 @@ namespace EFProgra2
             entidadestudiante.Apellido = txtApellido.Text;
             entidadestudiante.Direccion = txtDireccion.Text;
             entidadestudiante.Edad = Convert.ToInt32(txtEdad.Text);
+            MessageBox.Show(cmbMateria.SelectedValue.ToString());
             entidadestudiante.Id_Materia = Int32.Parse(cmbMateria.SelectedValue.ToString());
         }
 

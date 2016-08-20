@@ -25,6 +25,7 @@ namespace EFProgra2
 
         private void ManMateria_Load(object sender, EventArgs e)
         {
+            cargarGrid();
             try
             {
                 cmbProfesor.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -44,15 +45,17 @@ namespace EFProgra2
                 sqlda.Fill(dt1);
                 sqlconn.Close();
                 Dictionary<int, string> data = new Dictionary<int, string>();
-                for (int i = 0; i < dt1.Rows.Count; i++)
-                {
-                    data.Add(int.Parse(dt1.Rows[i][0].ToString()), dt1.Rows[i][1].ToString());
-                }
+
+                //if(dt1 != null){
+                    for (int i = 0; i < dt1.Rows.Count; i++)
+                    {
+                        data.Add(int.Parse(dt1.Rows[i][0].ToString()), dt1.Rows[i][1].ToString());
+                    }
+                //}
                 cmbProfesor.DataSource = new BindingSource(data, null);
                 cmbProfesor.DisplayMember = "Value";
                 cmbProfesor.ValueMember = "Key";
                 cmbProfesor.SelectedIndex = 0;
-                cargarGrid();
             }
             catch (SqlException ex)
             {
@@ -96,6 +99,7 @@ namespace EFProgra2
        private void cargarEntidad()
        {
             //fill entity with data
+           //MessageBox.Show(" "+cmbProfesor.SelectedIndex );
             entidadmateria.Id = Convert.ToInt32(txtIDMateria.Text);
             entidadmateria.Nombre = txtNombre.Text;
             entidadmateria.Id_Profesor = Int32.Parse(cmbProfesor.SelectedValue.ToString());            
