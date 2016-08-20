@@ -43,7 +43,7 @@ namespace EFProgra2
 
             DataTable dt1 = new DataTable();
             dt1 = new DataTable();
-            string sqlquery = " select id_materia, nombre from materia ";
+            string sqlquery = "select id_materia, nombre from materia ;";
 
             sqlconn = new SqlConnection(conexion);
             SqlDataAdapter sqlda = new SqlDataAdapter(sqlquery, sqlconn);
@@ -51,18 +51,16 @@ namespace EFProgra2
             sqlda = new SqlDataAdapter(sqlquery, sqlconn);
             sqlda.Fill(dt1);
             sqlconn.Close();
-
             Dictionary<int, string> data = new Dictionary<int, string>();
             for (int i = 0; i < dt1.Rows.Count; i++)
             {
                 data.Add(int.Parse(dt1.Rows[i][0].ToString()), dt1.Rows[i][1].ToString());
             }
-
             cmbMateria.DataSource = new BindingSource(data, null);
             cmbMateria.DisplayMember = "Value";
             cmbMateria.ValueMember = "Key";
-
             cmbMateria.SelectedIndex = 0;
+            cargarGrid();
         }
 
 

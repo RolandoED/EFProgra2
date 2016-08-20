@@ -1,0 +1,97 @@
+
+		REPORTE GENERAL DEL COLEGIO ABC
+EDAD:
+	Estudiantes Mayores de 18 A?os: 4
+	Estudiantes menores de edad : 2
+
+CUPO:
+
+ID Materia: 1
+Estudiantes : 1
+ID Materia: 2
+Estudiantes : 1
+ID Materia: 56
+Estudiantes : 1
+ID Materia: 66
+Estudiantes : 2
+ID Materia: 123
+Estudiantes : 1
+
+ASISTENCIA:
+__________
+ID Profesor: 1
+Cant Estudiantes en sus materias : 5
+ID Profesor: 34
+Cant Estudiantes en sus materias : 1
+
+PROFESORADO:
+========== 
+ID Profesor: 1 
+Cantidad Materias : 8 
+========== 
+ID Profesor: 34 
+Cantidad Materias : 1 
+========== 
+ID Profesor: 123 
+Cantidad Materias : 1 
+
+Profesores con menos de 5 materias
+	? ID Profesor: 34 con: 1 materias 
+	? ID Profesor: 123 con: 1 materias 
+
+Profesores con de [5-10] materias
+	? ID Profesor: 1 con: 8 materias 
+
+Profesores con m?s de 10 materias
+
+LABORATORIO:
+
+Estudiantes que necesitan laboratorio: 2
+		REPORTE GENERAL DEL COLEGIO ABC
+EDAD:
+	Estudiantes Mayores de 18 A?os: 4
+	Estudiantes menores de edad : 2
+
+CUPO:
+
+ID Materia: 1
+Estudiantes : 1
+ID Materia: 2
+Estudiantes : 1
+ID Materia: 56
+Estudiantes : 1
+ID Materia: 66
+Estudiantes : 2
+ID Materia: 123
+Estudiantes : 1
+
+ASISTENCIA:
+__________
+ID Profesor: 1
+Cant Estudiantes en sus materias : 5
+ID Profesor: 34
+Cant Estudiantes en sus materias : 1
+
+PROFESORADO:
+========== 
+ID Profesor: 1 
+Cantidad Materias : 8 
+========== 
+ID Profesor: 34 
+Cantidad Materias : 1 
+========== 
+ID Profesor: 123 
+Cantidad Materias : 1 
+
+Profesores con menos de 5 materias
+	? ID Profesor: 34 con: 1 materias 
+	? ID Profesor: 123 con: 1 materias 
+
+Profesores con de [5-10] materias
+	? ID Profesor: 1 con: 8 materias 
+
+Profesores con m?s de 10 materias
+
+LABORATORIO:
+
+Estudiantes que necesitan laboratorio: 2

@@ -33,7 +33,7 @@ namespace EFProgra2
         public  override void  GENERAR()
         {
             //TITULO PRINCIPAL
-            reporteGENERAL = "\t\tREPORTE GENERAL DEL COLEGIO ABC\r\n";
+            reporteGENERAL = "\r\n\t\tREPORTE GENERAL DEL COLEGIO ABC\r\n";
             //EDAD:
             reporteGENERAL += "EDAD:\r\n";
             reporteGENERAL += "\tEstudiantes Mayores de 18 Años: ";
@@ -52,7 +52,7 @@ namespace EFProgra2
             //LABORATORIO:
             reporteGENERAL += "\r\nLABORATORIO:\r\n";
             reporteGENERAL += Laboratorio();
-            //return reporteGENERAL;
+
         }
 
         public override string MOSTRAR()
@@ -62,6 +62,7 @@ namespace EFProgra2
 
         public override string IMPRIMIR()
         {
+            guardarDoc("REPORTEGENERAL.txt",reporteGENERAL);
             return "";
         }
 
@@ -130,7 +131,7 @@ namespace EFProgra2
                 " from Estudiante " +
                 " JOIN Materia " +
                 " ON Materia.id_materia = Estudiante.id_materia " +
-                " Where Materia.nombre IN ('Informática','Computación','Programación'); ";
+                " Where Materia.nombre IN ('Informatica','Computacion','Programacion'); ";
             SqlConnection con = new SqlConnection(conexion);
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader dbr;
@@ -171,31 +172,8 @@ namespace EFProgra2
             con.Close();
             return retorno;
         }
-
-        //public void ContadorPorMateria()
-        //{
-        //    String query = " select e.id_materia , count(*) " +
-        //            "from estudiante e " +
-        //            "where e.id_materia IN (SELECT ID_MATERIA from MATERIA) " +
-        //            "group by e.id_materia; ";
-        //    SqlConnection con = new SqlConnection(conexion);
-        //    SqlCommand cmd = new SqlCommand(query, con);
-        //    SqlDataReader dbr;
-        //    con.Open();
-        //    dbr = cmd.ExecuteReader();
-        //    int count = 0;
-        //    while (dbr.Read())
-        //    {
-        //        Console.WriteLine("__________");
-        //        count = count + 1;
-        //        //ndepto id
-        //        Console.WriteLine("Materia ID: " + dbr.GetInt32(0));
-        //        //apellido
-        //        Console.WriteLine("Estudiantes : " + dbr.GetInt32(1));
-        //    }
-        //    con.Close();
-        //}
         
+        // CALCULO DE ESTUDIANTES POR PROFESOR
         public string ContadorEstudiantesPorProfesor()
         {
             string retorno = "";
@@ -227,9 +205,7 @@ namespace EFProgra2
             return retorno;
         }
 
-
-
-
+        // CONTERO DE MAYORES
         public int Mayor18( )
         {
             String query = " ";
@@ -241,6 +217,7 @@ namespace EFProgra2
             return count;
         }
 
+        // CONTERO DE MENORES
         public int Menor18()
         {
             String query = " ";
@@ -252,6 +229,7 @@ namespace EFProgra2
             return count;
         }
 
+        //GUARDA EL DOCUMENTO
         public static void guardarDoc(string filename, string send)
         {
             string currentPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName);
@@ -259,38 +237,6 @@ namespace EFProgra2
             sw.Write(send);
             sw.Close();
         }
-
-        //CONECTAR
-        //public void conectarBD()
-        //{
-        //    sqlconn = new SqlConnection(conexion);
-        //    try
-        //    {
-        //        sqlconn.Open();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        var message = MessageBox.Show("Conexion fallida! Error: " + e.Message.ToString());
-        //    }
-        //}
-
-        //DESCONECTAR
-        //public void desconectarBD()
-        //{
-        //    sqlconn.Close();
-        //}
-
-        //EJECUTA QUERY
-        //public void ejecutarSQL(string sql)
-        //{
-        //    SqlCommand sqlcomm = new SqlCommand();
-        //    conectarBD();
-        //    sqlcomm.Connection = sqlconn;
-        //    sqlcomm.CommandText = sql;
-        //    sqlcomm.CommandType = CommandType.Text;
-        //    sqlcomm.ExecuteNonQuery();
-        //    desconectarBD();
-        //}
 
     }
 }

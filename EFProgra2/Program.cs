@@ -61,20 +61,16 @@ namespace EFProgra2
                     }
                     else if (decision2.Equals("3")) 
                     {
-                        Console.WriteLine("Imprimir");
+                        if (entidadcolegio.IsReporteEmpty())
+                        {
+                            Console.WriteLine("NO SE PUEDE IMPRIMIR SI NO SE HA GENERADO");
+                        }
+                        else { 
+                            entidadcolegio.IMPRIMIR();  
+                            Console.WriteLine("SE GUARDO EL REPORTE");                        
+                        }
                     }
-                }
-
-                //Console.WriteLine("Mayor 18: " + s.Mayor18());
-                //Console.WriteLine("Menor 18: " + s.Menor18());
-                //s.ContadorPorMateria();
-                //s.ContadorEstudiantesPorProfesor();
-                //s.Profesorado();
-                //s.Laboratorio();
-
-
-                //STOP
-                
+                }                
             }
             //SALIR
             else
