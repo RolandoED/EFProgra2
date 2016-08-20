@@ -25,10 +25,10 @@ namespace EFProgra2
 
     public class EstadisticaColegio : Estadistica
     {
-        string conexion = "Data Source=(local);Initial Catalog=bd_colegio;"+
+        private string conexion = "Data Source=(local);Initial Catalog=bd_colegio;"+
             "Integrated Security=True;";
         //SqlConnection sqlconn;
-        string reporteGENERAL = string.Empty;
+        private string reporteGENERAL = string.Empty;
 
         public  override void  GENERAR()
         {

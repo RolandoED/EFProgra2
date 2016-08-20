@@ -25,6 +25,7 @@ namespace EFProgra2
 
         private void ManEstudiante_Load(object sender, EventArgs e)
         {
+            cmbMateria.DropDownStyle = ComboBoxStyle.DropDownList;
             cargarGrid();
             cargarCombo();
         }        

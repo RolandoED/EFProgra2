@@ -27,6 +27,7 @@ namespace EFProgra2
         {
             try
             {
+                cmbProfesor.DropDownStyle = ComboBoxStyle.DropDownList;
                 string conexion = "Data Source=(local); " +
                     "Initial Catalog=bd_colegio;" +
                     "Integrated Security=True;";
